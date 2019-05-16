@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+function validateform()
+{
+    alert("Submitted");
+}
+
+</script>
+
+<h2>Address</h2>
+
+<form name="Address" onsubmit="return validateform()" method="post" target="_blank">
+  <fieldset>
+    Name<span style="color:red">* </span> :<br>
+    <input id="name" type="text" name="name" required>
+    <br>
+    E-mail id<span style="color:red">* </span>:<br>
+    <input id="email" type="email" name="email" required>
+    <br>
+    Mobile no<span style="color:red">* </span>: <br>
+    <input id="mobile_no" type="text" name="mobile_no" pattern="[0-9]{10}" required>
+    <br>
+    Address(Line 1)<span style="color:red">* </span>:<br>
+    <input id="add1" type="text" name="add1" required>
+    <br>
+    Address(Line 2):<br>
+    <input id="add2" tpe="text" name="add2">
+    <br>
+    City<span style="color:red">* </span>:<br>
+    <input id="city" type="text" name="city" required>
+    <br>
+    State<span style="color:red">* </span>:<br>
+    <select>
+  	<option value="WB">West Bengal</option>
+  	<option value="KTK">Karnataka</option>
+  	<option value="KL">Kerala</option>
+  	<option value="TN">Tamil Nadu</option>
+    </select>
+    <br>
+    Pin code<span style="color:red">* </span>:<br>
+    <input id="pin" type="text" name="pin" pattern="[0-9]{6}" required>
+    <br>
+    Landmark<span style="color:red">* </span>:<br>
+    <input id="landmark" type="text" name="landmark" placeholder="eg Opp Vidya Mandir" required>
+    <br><br>
+    <p><span style="color:red">*</span>: Compulsory</p>
+    <input type=submit value=Submit> 
+    <input type=reset value=Refresh> 
+  </fieldset>
+</form>
+
+</body>
+</html>
